@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+   <link rel="stylesheet" href="./css/style.css">  
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <p>Size of the array:</p>
+                <input id="a_size" type="range" min="20" max="150" step="1" value="80">      
+                <p>Speed of the algorithm:</p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+                <button id="a_generate">Generate New Array.</button>
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting visualizer</p>
+
+                <div class="algos">
+                    <button >Bubble</button>
+                    <button >Selection</button>
+                    <button >Insertion</button>
+                    <button >Merge</button>
+                    <button >Quick</button>
+                    <button >Heap</button>    <!-- <button style="margin-right: 0px;"> -->
+                </div>
+            </div>
+
+        </nav>
+    </header>
+     
+    <section class="firstbackground">
+
+       <div id="Info_Cont1">
+         <p class="bappa1">
+             Sorting Start
+         </p>                           <!-- THIS IS FIRST CONTAINER -->
+        </div>
+
+        <div id="array_container"> </div>
+            
+        </div>
+         <div id="Info_Cont2">
+          <p class="bappa2">
+            Sorting End
+          </p>                         <!-- THIS IS SECOND CONATAINER 
+                                          <footer> </footer>  -->
+        </div>  
+        
+    </section>
+
+  <!-- <section class="secondbackground">
+         <div class="Time_Complexity"></div>  
+     </section>  -->
+
+    <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/Visualizer.js"></script>  <!--This should be loaded after main.js-->
+    <script src="./scripts/Bubble.js"></script>
+    <script src="./scripts/Selection.js"></script>
+    <script src="./scripts/Insertion.js"></script>
+    <script src="./scripts/Merge.js"></script>
+    <script src="./scripts/Quick.js"></script>
+    <script src="./scripts/Heap.js"></script>
+</body>
+
+</html>
